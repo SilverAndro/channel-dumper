@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "channel-dump",
+  "version": "${version}",
+  "name": "channel-dump",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/SilverAndro/channel-dump"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/channel-dump/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.silverandro.channeldump.ChannelDump"
+    ]
+  },
+  "mixins": [
+    "channel-dump.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
